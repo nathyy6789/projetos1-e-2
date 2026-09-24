@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 01</title>
+    <link rel="stylesheet" href="/projeto01/css/style.css">
+</head>
+<body>
+    <main>
+        <p>Olá, eu sou</p>
+
+        <h1 id="nome">Jaemely</h1>
+
+        <p>Olá! Meu nome é Jaemely, tenho 16 anos, e estou no segundo ano do ensino médio na Escola Técnica Estadua de Palmares</p><br>
+
+        <h2>Meus interesses</h2>
+        <ul>
+            <li>Desenho/Pintura</li>
+            <li>Música</li>
+            <li>Ler</li>
+        </ul>
+
+        <button id="botaoMostrar">Mostrar Mensagem</button>
+
+        <button id="botaoOcultar">Ocultar Mensagem</button>
+
+        <p id="mensagem"></p>
+
+    </main>
+    <script>
+        const botaoMostrar = document.querySelector("#botaoMostrar")
+        const botaoOcultar = document.querySelector("#botaoOcultar")
+        const mensagem = document.querySelector("#mensagem")
+        const nome = document.querySelector("#nome")
+        
+        botaoMostrar.addEventListener('click', function(){
+            mensagem.textContent =`Prazer em conhecer você, ${nome.textContent}!`;
+        });
+        botaoOcultar.addEventListener('click', function(){
+            mensagem.textContent ="";
+        });
+
+    </script>
+    
+
+</body>
+<script src="/projeto01/js/style.js"></script>
+</html>
